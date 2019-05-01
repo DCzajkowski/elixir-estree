@@ -170,7 +170,7 @@ defmodule ESTree.Tools.Generator do
       }
     )
     
-    opts = if is_map(beauty_or_opts), do Map.merge(opts, beauty_or_opts), else: opts
+    opts = if is_map(beauty_or_opts), do: Map.merge(opts, beauty_or_opts), else: opts
 
     value
     |> do_generate(opts)
